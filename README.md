@@ -3,6 +3,8 @@
 
 This is a unit testing framework for C. It adds to your makefile a target `gut`, which will make a unit test runner containing all the unit tests you write into gut/unit\_tests.c
 
+If you are starting a _new_ project, consider [gframework](https://github.com/gavinfielder/gframework), which includes an option to install GüT.  
+
 ## Installation
 In your root project folder:
 ```bash
@@ -10,7 +12,7 @@ git clone https://github.com/gavinfielder/gut gut
 sh gut/install.sh
 ```
 This depends on the following assumptions:
- - You have put your source files into a "`SRC`" variable, and they do not include a main. For example, `SRC=myfile1.c myfile2.c`
+ - You have put your source files into a "`SRC`" variable, and they do not include a main. For example, `SRC=myfile1.c myfile2.c`. If your project has a main, I recommend keeping it in a small file, for example `SRC_MAIN=main.c`, that can be included in compilation separately. 
  - You have put your `-I` includes into an "`INC`" variable, and it includes the `-I` flag inside the variable. For example, `INC=-I inc/`  
  - You have put your `-L`/`-l` library compile flags into a "`LIB`" variable and it includes the `-L`/`-l` flags inside the variable. For example `LIB=-L libft/ -lft` Alternatively, it would also work being a collection of paths to static libraries (to link directly into the executable). Example `LIB=libft/libft.a`  
 
