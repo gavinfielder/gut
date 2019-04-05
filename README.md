@@ -1,7 +1,7 @@
 # GüT
 ## C unit testing framework and test runner
 
-This is a unit testing framework for C. It adds to your makefile
+This is a unit testing framework for C. It adds to your makefile a target `gut`, which will make a unit test runner containing all the unit tests you write into gut/unit\_tests.c
 
 ## Installation
 In your root project folder:
@@ -13,6 +13,8 @@ This depends on the following assumptions:
  - You have put your source files into a "SRC" variable, and they do not include a main.
  - You have put your -I includes into an "INC" variable, and it includes the -I flag
  - You have put your -L/-l library compile flags into a "LIB" variable and it includes -L/-l
+
+If these assumptions are incorrect, you'll have to tweak the makefile after installation to set up properly. Instructions are provided in the Makefile.  
 
 ## Usage
 
