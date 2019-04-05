@@ -10,7 +10,7 @@ If you are starting a _new_ project, consider [gframework](https://github.com/ga
 In your root project folder:
 ```bash
 git clone https://github.com/gavinfielder/gut gut
-sh gut/install.sh
+cd gut && ./install.sh
 ```
 This depends on the following assumptions:
  - You have put your source files into a "`SRC`" variable, and they do not include a main. For example, `SRC=myfile1.c myfile2.c`. If your project has a main, I recommend keeping it in a small file, for example `SRC_MAIN=main.c`, that can be included in compilation separately. 
