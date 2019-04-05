@@ -3,9 +3,10 @@
 
 This is a unit testing framework for C. It adds to your makefile a target `gut`, which will make a unit test runner containing all the unit tests you write into gut/unit\_tests.c
 
-If you are starting a _new_ project, consider [gframework](https://github.com/gavinfielder/gframework), which includes an option to install GüT.  
-
 ## Installation
+
+If you are starting a _new_ project, consider [gframework](https://github.com/gavinfielder/gframework), which includes an option to install GüT. This makes installation easier because it's certain to set everything up correctly without fiddling.
+
 In your root project folder:
 ```bash
 git clone https://github.com/gavinfielder/gut gut
