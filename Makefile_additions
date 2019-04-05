@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    G.U.T.  Gavin's Unit Testing Framework             :+:      :+:    :+:    #
+#    GüT  Gavin's Unit Testing Framework : Get GüT      :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 21:19:45 by gfielder          #+#    #+#              #
-#    Updated: 2019/04/04 17:25:10 by gfielder         ###   ########.fr        #
+#    Updated: 2019/04/04 21:45:26 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@
 # It is recommended to add at least the gut_clean and gut_fclean to your own
 # targets.
 #
-# G.U.T. reads your source files from SRC, INC, and LIB
+# GüT reads your source files from SRC, INC, and LIB
 #  - SRC must not include a main
 #  - INC expects -I to be included
 #  - LIB expects -L and -l to be included, or to be paths of static libraries
@@ -46,7 +46,7 @@ gut: $(GUT_TEST_ONAME)
 $(GUT_TEST_ONAME): $(GUT_SRC_TEST) gut_test_index
 	@rm -f $(GUT_TEST_RESULTS)
 	@$(GUT_CC) $(GUT_CFLAGS) $(GUT_INC) $(GUT_LIB) $(GUT_TEST_DEFINES) -o $(GUT_TEST_ONAME) $(GUT_SRC_TEST) $(GUT_INDEXED_TESTS)
-	@echo "\x1B[0;32mSuccessfully made G.U.T unit testing utility. Directions:\x1B[0;0m\n    ./test [from] [[to]]   for a range of tests by number,\n    ./test [string]        to run all tests starting with [string],\n    ./test \"[str*ing]\"     (you can use * as wildcards if it's in double quotes),\n    ./test                 to run all tests."
+	@echo "\x1B[0;32mSuccessfully made GüT unit testing utility. Directions:\x1B[0;0m\n    ./test [from] [[to]]   for a range of tests by number,\n    ./test [string]        to run all tests starting with [string],\n    ./test \"[str*ing]\"     (you can use * as wildcards if it's in double quotes),\n    ./test                 to run all tests."
 
 $(GUT_INDEXED_TESTS): gut_test_index
 
