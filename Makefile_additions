@@ -6,7 +6,7 @@
 #    By: gfielder <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/28 21:19:45 by gfielder          #+#    #+#              #
-#    Updated: 2019/04/04 15:28:47 by gfielder         ###   ########.fr        #
+#    Updated: 2019/04/04 17:25:10 by gfielder         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ GUT_CC=clang
 GUT_TEST_RESULTS=test_results.txt
 GUT_UNIT_TEST_FILE=gut/unit_tests.c
 GUT_INDEXED_TESTS=gut/unit_tests_indexed.c
-GUT_TEST_DEFINES=-D TEST_OUTPUT_FILENAME="\"$(TEST_RESULTS)\""
+GUT_TEST_DEFINES=-D TEST_OUTPUT_FILENAME="\"$(GUT_TEST_RESULTS)\""
 
 gut: $(GUT_TEST_ONAME)
 
