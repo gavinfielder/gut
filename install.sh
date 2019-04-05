@@ -1,4 +1,4 @@
 #!/bin/sh
 cat Makefile_additions >> ../Makefile
 echo "gut/" >> ../.gitignore
-echo "G.U.T. has been installed"
+echo "GüT has been installed"
